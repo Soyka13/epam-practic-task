@@ -9,7 +9,6 @@
 body {
   background-color: white;
   font-family: sans-serif;
-
 }
 
 .head {
@@ -75,34 +74,6 @@ body {
   font-size: 1.5em;
 }
 
-/* @media (min-width: 1001px) {
-  .top {
-    font-size: 3em;
-    height: 1000px;
-  }
-}
-
-@media (max-width: 1000px) and (min-width: 651px) {
-  .top {
-    font-size: 2em;
-    height: 600px;
-  }
-}
-
-@media (max-width: 650px) {
-  .top {
-    font-size: 1.3em;
-    padding-top: 50%;
-    height: 500px;
-  }
-}
-
-@media (max-width: 450px) {
-  .top {
-    font-size: 0.9em;
-  }
-}
-*/
 
 
 .greenBtn {
@@ -116,9 +87,12 @@ body {
   margin-top: 3%;
 }
 
-.eduImg {
+
+
+
+.eduImg > img{
   float: left;
-  margin: 5%;
+  padding: 5%;
 }
 
 .eduInfo h2 {
@@ -127,7 +101,7 @@ body {
   font-weight: bold;
   font-size: 1.3em;
   text-align: left;
-  margin-right: 15%;
+  /* margin-right: 15%; */
 }
 
 .eduInfo p {
@@ -168,6 +142,7 @@ body {
 .features {
   margin-top: 17%;
   padding-top: 2%;
+  padding-bottom: 5%;
   margin-bottom: 2%;
 }
 
@@ -193,7 +168,7 @@ body {
 }
 
 .headline{
-  padding: 5%;
+  padding: 7%;
 }
 
 .flex-container  figcaption {
@@ -216,8 +191,12 @@ body {
     margin-top: 1%;
     margin-left: 6%;
     padding-bottom: 2%;
-    width: 25.7%;
+    width: 25%;
     background-color:#f2f2f2;
+}
+
+.card > img {
+    width: 100%;
 }
 
 .courses {
@@ -602,4 +581,144 @@ div.scroll {
   padding-right: 6%;
   padding-bottom: 1%;
   font-size: 0.8em;
+}
+
+@media (max-width: 375px){
+    .about{
+        color: inherit;
+    }
+    .about li {
+      font-size: 1em;
+    }
+    .top {
+      font-size: 0.9em;
+      background-color: #1A1A1A;
+      background-image: none;
+    }
+    .greet h1 {
+      padding-top: 50%;
+      padding-bottom: 7%;
+      font-size: 2.5em;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .greet h2 {
+      font-size: 1em;
+      padding-left: 25%;
+      padding-right: 25%;
+      padding-bottom: 10%;
+      font-weight: normal;
+    }
+    .roundBtn {
+      width: 40%;
+    }
+
+    .eduImg  img {
+      content: url(../images/Path3.png);
+      width: 90%;
+      padding-top: 5%;
+      padding-left: 5%;
+      margin: 0%;
+    }
+    .eduInfo h2 {
+      margin: 0;
+      padding-left: 5%;
+    }
+
+    .eduInfo p {
+      padding-left: 5%;
+    }
+
+    .eduInfo li {
+      padding-left: 5%;
+      font-weight: 500;
+    }
+
+    .main-heading {
+      margin: 5%;
+      width: unset;
+    }
+    .flex-container > figure {
+      width: 55%;
+    }
+    .card{
+      width: 100%;
+      margin-top: 5%;
+      margin-left: 0%;
+    }
+
+    .card-body > h2 {
+      padding: 5%;
+    } 
+
+    .card-body > p {
+      padding-right: 30%;
+      padding-left: 5%;
+      padding-bottom: 5%;
+    }
+
+    .teachers .grid-container {
+      grid-template-columns: unset;
+    }
+
+    #slider ul {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    #slider li {
+      width: 15%;
+      margin: 1%;
+    }
+
+    .scroll-member {
+      width: 100%;
+    }
+
+    .scroll-member p {
+      padding-bottom: 5%;
+    }
+
+    .scroll-member h3 {
+      width: unset;
+    }
+
+    .read-more button{
+      margin: 7%;
+    }
+
+    .sub-text input {
+      width: 80%;
+    }
+
+    .sub-text button {
+      margin: 10%;
+    }
+
+    .sub-text h1 {
+      padding: 20%;
+    }
+
+    .contact-body {
+      width: unset;
+    }
+    .contact-body textarea {
+      border: 1px solid grey;
+    }
+    .contact-body button {
+      width: 50%;
+      margin-left: 25%;
+    }
+    .contact-location iframe {
+      width: unset;
+      margin-left: 20%;
+    }
+    .info {
+      display: flow-root;
+      margin-left: 25%;
+    }
+
+    .info > p {
+      padding-left: 20%;
+      padding-bottom: 5%;
+    }
 }
